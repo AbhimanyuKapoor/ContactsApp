@@ -1,0 +1,13 @@
+<h1>Contacts</h1>
+
+<br/>
+
+<div class="container">
+  <div class="row">
+    <% @contacts.each do |contact| %>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <%= render contact %>
+      </div>
+    <% end %>
+  </div>
+</div>

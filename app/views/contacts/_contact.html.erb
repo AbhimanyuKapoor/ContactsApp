@@ -1,0 +1,25 @@
+<%= link_to contact, class: "link-reset" do %>
+
+<div id="<%= dom_id contact %>" class="card" >
+  <div class="card-header">
+      <strong>Name:</strong>
+      <%= contact.first_name %>
+      <%= contact.last_name %>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <strong>Email:</strong>
+      <%= contact.email %>
+    </li>
+    <li class="list-group-item">
+      <strong>Phone:</strong>
+      <%= contact.phone %>
+    </li>
+    <li class="list-group-item">
+      <strong>Twitter:</strong>
+      <%= contact.twitter %>
+    </li>
+  </ul>
+</div>
+
+<% end %>

@@ -1,0 +1,7 @@
+<%= render @contact %>
+
+<div class="d-flex gap-2 mt-4">
+  <%= link_to "Back", contacts_path, class: "btn btn-light btn-outline-dark" %>
+  <%= link_to "Edit", edit_contact_path(@contact), class: "btn btn-light btn-outline-dark" %>
+  <%= button_to "Delete", @contact, method: :delete, class: "btn btn-danger", data: {turbo_confirm: "Are you sure?"} %>
+</div>
