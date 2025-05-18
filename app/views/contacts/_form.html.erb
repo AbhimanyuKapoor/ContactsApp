@@ -37,6 +37,10 @@
   </div>
 
   <div>
+    <%= form.number_field :user_id, id: :contact_user_id, class: "form-control", value: current_user.id, type: :hidden %>
+  </div>
+
+  <div>
     <%= form.submit class: "btn btn-secondary mt-3" %>
   </div>
 <% end %>
